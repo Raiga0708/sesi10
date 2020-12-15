@@ -1,0 +1,73 @@
+.gambar {
+    width: 100%;
+
+    .slideshow-container {
+        position: relative;
+        margin: auto;
+
+        .mySlides img {
+            width: 100%;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        .dot-background {
+            width: 100%;
+            margin-top: -99px;
+            padding: 40px;
+            position: absolute;
+            background-image: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
+        }
+        
+        .dot {
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            margin-top: -40px;
+            background-color: rgb(8, 21, 138);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #546396;
+        }
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+    }
+
+}
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px
+	}
+}
